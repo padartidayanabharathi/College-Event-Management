@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>College Fest 2026</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+<div id="menu" class="side-menu">
+
+<a onclick="showPage('home')">Home</a>
+<a onclick="showPage('events')">Events</a>
+<a onclick="showPage('sports')">Sports</a>
+<a onclick="showPage('guests')">Special Guests</a>
+<a onclick="showPage('stalls')">Stalls</a>
+<a onclick="showPage('wishlist')">Wishlist</a>
+<a onclick="showPage('login')">Login</a>
+<a onclick="showPage('register')">Register</a>
+
+</div>
+
+<!-- HOME -->
+
+<section id="home" class="page active">
+
+<h1 class="home-title">
+
+Vignan's Lara Institute of Technology and Science  
+<br>
+College Fest 2026
+
+</h1>
+
+<button class="explore" onclick="showPage('events')">
+
+Explore Events
+
+</button>
+
+</section>
+
+<!-- EVENTS -->
+
+<section id="events" class="page">
+
+<h2>Fest Events</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+<h3>Coding Contest</h3>
+<button onclick="showDetails('coding')">Details</button>
+<button onclick="addWishlist('Coding Contest')">❤️ Wishlist</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e">
+<h3>Dance Battle</h3>
+<button onclick="showDetails('dance')">Details</button>
+<button onclick="addWishlist('Dance Battle')">❤️ Wishlist</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d">
+<h3>Music Show</h3>
+<button onclick="showDetails('music')">Details</button>
+<button onclick="addWishlist('Music Show')">❤️ Wishlist</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<h3>Photography</h3>
+<button onclick="showDetails('photo')">Details</button>
+<button onclick="addWishlist('Photography')">❤️ Wishlist</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHQiBZFun8bBT82ocD6vcslY1TPZmQZ7XJroXU7YlB&s">
+<h3>Singing</h3>
+<button onclick="showDetails('sing')">Details</button>
+<button onclick="addWishlist('Singing')">❤️ Wishlist</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1531058020387-3be344556be6">
+<h3>Quiz</h3>
+<button onclick="showDetails('quiz')">Details</button>
+<button onclick="addWishlist('Quiz')">❤️ Wishlist</button>
+</div>
+
+</div>
+
+<div id="details"></div>
+
+</section>
+
+<!-- SPORTS -->
+
+<section id="sports" class="page">
+
+<h2>Sports Events</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e">
+<h3>Cricket</h3>
+<button onclick="showDetails('Cricket')">Details</button>
+<button onclick="addWishlist('Cricket')">❤️ Wishlist</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d">
+<h3>Football</h3>
+<button onclick="showDetails('Football')">Details</button>
+<button onclick="addWishlist('Football')">❤️ Wishlist</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff">
+<h3>Badminton</h3>
+<button onclick="showDetails('Badminton')">Details</button>
+<button onclick="addWishlist('Badminton')">❤️ Wishlist</button>
+</div>
+
+</div>
+
+</section>
+
+<!-- STALLS -->
+
+<section id="stalls" class="page">
+
+<h2>Food Stalls</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnHEKNOzHoVnQidOWpYGb2fFwwbcdzv28BLw&s">
+<h3>Biryani Stall</h3>
+<button onclick="showMenu('biryani')">Menu Card</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+<h3>Burger Stall</h3>
+<button onclick="showMenu('burger')">Menu Card</button>
+</div>
+
+<div class="card">
+<img src="https://media.istockphoto.com/id/153784617/photo/supreme-pizza-slice-lift.jpg?s=612x612&w=0&k=20&c=Et5uDUJYv3sqDitb1jnUbnGrxhn015foBX_BS-1NFxs=">
+<h3>Pizza Stall</h3>
+<button onclick="showMenu('pizza')">Menu Card</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToNb4qLVc8li_M2NHBfEl14DaVpUCmplY5lg&s">
+<h3>Ice Cream</h3>
+<button onclick="showMenu('ice')">Menu Card</button>
+</div>
+
+</div>
+
+<div id="menuDetails"></div>
+
+</section>
+
+<!-- GUESTS -->
+
+<section id="guests" class="page">
+
+<h2 class="gold">Special Guests</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://cdn.telugu360.com/wp-content/uploads/2025/01/Anil-Ravipudi-2.jpg">
+<h3>Anil Ravipudi</h3>
+<p>Time: 6PM</p>
+<p>Venue: Main Stage</p>
+</div>
+
+<div class="card">
+<img src="https://img.studioflicks.com/wp-content/uploads/2021/08/03111951/Rashmika-Mandanna.jpg">
+<h3>Rashmika Mandanna</h3>
+<p>Time: 5PM</p>
+<p>Venue: Auditorium</p>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAvHw9etZ9ufCE1744a0uSa03SfWpu_DTPfA&s">
+<h3>Mahesh Babu</h3>
+<p>Time: 7PM</p>
+<p>Venue: Main Stage</p>
+</div>
+
+<div class="card">
+<img src="https://www.wallsnapy.com/img_gallery/samantha-new-saree-images-3902948.jpg">
+<h3>Samantha</h3>
+<p>Time: 4PM</p>
+<p>Venue: Auditorium</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- WISHLIST -->
+
+<section id="wishlist" class="page">
+
+<h2>Your Wishlist</h2>
+
+<ul id="wish"></ul>
+
+</section>
+
+<!-- LOGIN -->
+
+<section id="login" class="page">
+
+<div class="box">
+
+<h2>Login</h2>
+
+<input placeholder="Username">
+
+<input type="password" placeholder="Password">
+
+<button>Login</button>
+
+</div>
+
+</section>
+
+<!-- REGISTER -->
+
+<section id="register" class="page">
+
+<div class="box">
+
+<h2>Register</h2>
+
+<input placeholder="Name">
+<input placeholder="Email">
+<input placeholder="Phone">
+
+<button>Register</button>
+
+</div>
+
+</section>
+
+
+
+<!-- Popup for event details -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">✖</span>
+    <h2 id="popupTitle"></h2>
+    <p id="popupText"></p>
+  </div>
+</div>
+
+<!-- Link to external JS -->
+<script src="script.js"></script>
+</body>
+</html>
